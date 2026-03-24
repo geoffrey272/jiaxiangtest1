@@ -1,0 +1,13 @@
+
+name: Required Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "required check running
